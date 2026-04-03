@@ -85,7 +85,7 @@ export function CustomCursor() {
         ctx.globalAlpha = p.alpha;
         // @ts-expect-error accessing dynamic color
         ctx.fillStyle = p.color;
-        ctx.shadowColor = ctx.fillStyle;
+        ctx.shadowColor = ctx.fillStyle as string;
         ctx.shadowBlur = 6;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
