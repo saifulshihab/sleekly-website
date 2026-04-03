@@ -49,9 +49,9 @@ export function Footer() {
                   className="font-display text-2xl font-700 tracking-tight"
                   style={{ fontVariationSettings: "'opsz' 144, 'wght' 700" }}
                 >
-                  Sleek<span className="text-lawn">ly</span>
+                  Sleek<span className="text-primary">ly</span>
                 </span>
-                <span className="h-1.5 w-1.5 rounded-full bg-lawn" />
+                <span className="h-1.5 w-1.5 rounded-full bg-primary" />
               </Link>
 
               <p className="max-w-xs leading-relaxed text-cream/60">
@@ -62,7 +62,7 @@ export function Footer() {
               <div className="flex flex-col gap-1">
                 <a
                   href="mailto:hello@sleekly.dev"
-                  className="font-mono text-sm text-lawn transition-colors hover:text-lawn-dim"
+                  className="font-mono text-sm text-primary transition-colors hover:text-primary-dim"
                 >
                   hello@sleekly.dev
                 </a>

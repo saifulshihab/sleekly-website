@@ -79,7 +79,7 @@ export function ProcessSection() {
         <div className="process-header mb-16 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <span className="h-px w-8 bg-lawn" />
+              <span className="h-px w-8 bg-primary" />
               <span className="section-label text-muted">How We Work</span>
             </div>
             <h2
@@ -109,7 +109,7 @@ export function ProcessSection() {
               >
                 {/* Step number node */}
                 <div className="relative flex items-center gap-4 lg:absolute lg:left-8 lg:top-0 lg:flex-col lg:items-start lg:gap-0">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-ink bg-cream transition-all duration-300 group-hover:border-lawn group-hover:bg-lawn lg:mb-6">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-ink bg-cream transition-all duration-300 group-hover:border-primary group-hover:bg-primary lg:mb-6">
                     <span className="font-mono text-xs font-600 text-ink transition-colors group-hover:text-ink">
                       {step.number}
                     </span>

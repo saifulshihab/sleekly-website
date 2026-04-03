@@ -11,8 +11,8 @@ const config: Config = {
       colors: {
         cream: "#fdfbd4",
         beige: "#ede8d0",
-        lawn: "#7CFC00",
-        "lawn-dim": "#5ecf00",
+        primary: "#00674f",
+        "primary-dim": "#005040",
         forest: "#2d6a4f",
         sage: "#87a878",
         ink: "#1a1a0e",
@@ -59,7 +59,7 @@ const config: Config = {
         dots: "28px 28px",
       },
       boxShadow: {
-        "green-glow": "0 0 40px rgba(124, 252, 0, 0.25)",
+        "green-glow": "0 0 40px rgba(0, 103, 79, 0.35)",
         "ink-hard": "4px 4px 0px #1a1a0e",
         "ink-hard-lg": "6px 6px 0px #1a1a0e",
       },

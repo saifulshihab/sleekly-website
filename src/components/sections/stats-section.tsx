@@ -73,7 +73,7 @@ export function StatsSection() {
             >
               <div className="flex items-end gap-1">
                 <span
-                  className="stat-counter font-display text-5xl font-700 leading-none text-lawn lg:text-6xl"
+                  className="stat-counter font-display text-5xl font-700 leading-none text-primary lg:text-6xl"
                   style={{ fontVariationSettings: "'opsz' 96, 'wght' 700" }}
                   data-target={stat.value}
                   data-suffix={stat.suffix}

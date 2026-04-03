@@ -4,6 +4,7 @@ import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,11 +39,11 @@ export function CtaSection() {
     >
       {/* Decorative circle */}
       <div
-        className="cta-deco pointer-events-none absolute -left-40 -top-40 rounded-full border border-lawn/10"
+        className="cta-deco pointer-events-none absolute -left-40 -top-40 rounded-full border border-primary/10"
         style={{ width: "600px", height: "600px" }}
       />
       <div
-        className="cta-deco pointer-events-none absolute -right-20 bottom-0 translate-y-1/2 rounded-full bg-lawn/5"
+        className="cta-deco pointer-events-none absolute -right-20 bottom-0 translate-y-1/2 rounded-full bg-primary/5"
         style={{ width: "400px", height: "400px" }}
       />
 
@@ -54,9 +55,9 @@ export function CtaSection() {
 
       <div className="relative mx-auto max-w-5xl text-center">
         <div className="cta-label mb-6 flex items-center justify-center gap-3">
-          <span className="h-px w-8 bg-lawn/50" />
+          <span className="h-px w-8 bg-primary/50" />
           <span className="section-label text-cream/40">Ready When You Are</span>
-          <span className="h-px w-8 bg-lawn/50" />
+          <span className="h-px w-8 bg-primary/50" />
         </div>
 
         <h2
@@ -70,7 +71,7 @@ export function CtaSection() {
         >
           Ready to Build{" "}
           <span
-            className="italic text-lawn"
+            className="italic text-primary"
             style={{ fontVariationSettings: "'opsz' 144, 'wght' 500, 'SOFT' 80" }}
           >
             Something
@@ -86,12 +87,8 @@ export function CtaSection() {
         </p>
 
         <div className="cta-actions mt-10 flex flex-wrap items-center justify-center gap-4">
-          <Link
-            href="/contact"
-            className="group inline-flex items-center gap-2 border-2 border-lawn bg-lawn px-8 py-4 font-sans text-sm font-700 uppercase tracking-widest text-ink transition-all duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_rgba(124,252,0,0.4)] active:translate-x-0.5 active:translate-y-0.5"
-          >
-            Start a Conversation
-            <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+          <Link href="/contact" className={buttonVariants({ variant: "primary", size: "lg" })}>
+            Start a Conversation →
           </Link>
           <a
             href="mailto:hello@sleekly.dev"
@@ -106,7 +103,7 @@ export function CtaSection() {
           {["No long-term lock-in", "Fixed-price options available", "Response within 24h"].map(
             (item) => (
               <div key={item} className="flex items-center gap-2">
-                <span className="h-1 w-1 rounded-full bg-lawn" />
+                <span className="h-1 w-1 rounded-full bg-primary" />
                 <span className="font-mono text-xs text-cream/30">{item}</span>
               </div>
             ),

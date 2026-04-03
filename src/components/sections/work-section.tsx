@@ -16,7 +16,7 @@ const projects = [
       "A real-time analytics dashboard for a Series A startup. We architected the entire platform — from data ingestion pipelines to a pixel-perfect React UI with 50k+ daily active users.",
     outcome: "3× faster query performance, 40% reduction in churn",
     stack: ["Next.js", "TypeScript", "PostgreSQL", "AWS", "Grafana"],
-    accent: "bg-lawn",
+    accent: "bg-primary",
   },
   {
     number: "02",
@@ -73,7 +73,7 @@ export function WorkSection() {
         <div className="work-header mb-16 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <span className="h-px w-8 bg-lawn" />
+              <span className="h-px w-8 bg-primary" />
               <span className="section-label text-muted">Selected Projects</span>
             </div>
             <h2
@@ -134,7 +134,7 @@ function WorkCard({ number, category, title, description, outcome, stack, accent
           <p className="text-base leading-relaxed text-muted">{description}</p>
 
           {/* Outcome */}
-          <div className="flex items-start gap-3 rounded-none border-l-2 border-lawn/60 pl-4">
+          <div className="flex items-start gap-3 rounded-none border-l-2 border-primary/60 pl-4">
             <p className="text-sm font-600 text-forest">{outcome}</p>
           </div>
         </div>
@@ -152,7 +152,7 @@ function WorkCard({ number, category, title, description, outcome, stack, accent
             ))}
           </div>
 
-          <button className="group/btn flex items-center gap-2 border-b border-ink/30 pb-0.5 font-sans text-xs font-700 uppercase tracking-widest text-ink transition-all duration-200 hover:border-lawn hover:text-forest">
+          <button className="group/btn flex items-center gap-2 border-b border-ink/30 pb-0.5 font-sans text-xs font-700 uppercase tracking-widest text-ink transition-all duration-200 hover:border-primary hover:text-forest">
             View Case Study
             <span className="transition-transform duration-200 group-hover/btn:translate-x-1">→</span>
           </button>

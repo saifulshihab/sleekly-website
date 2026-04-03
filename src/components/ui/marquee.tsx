@@ -35,7 +35,7 @@ export function Marquee({
             >
               {item}
             </span>
-            <span className="text-lawn opacity-60">{separator}</span>
+            <span className="text-primary opacity-60">{separator}</span>
           </li>
         ))}
       </ul>

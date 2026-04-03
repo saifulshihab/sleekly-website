@@ -12,7 +12,7 @@ interface Particle {
   decay: number;
 }
 
-const COLORS = ["#7FBA00", "#a8d832", "#c8e86a", "#f5f0e8"];
+const COLORS = ["#00674f", "#00896a", "#00b388", "#d4ede7"];
 
 export function CustomCursor() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -96,8 +96,8 @@ export function CustomCursor() {
       // Draw dot at cursor tip
       ctx.save();
       ctx.globalAlpha = 0.9;
-      ctx.fillStyle = "#7FBA00";
-      ctx.shadowColor = "#7FBA00";
+      ctx.fillStyle = "#00674f";
+      ctx.shadowColor = "#00674f";
       ctx.shadowBlur = 10;
       ctx.beginPath();
       ctx.arc(mouseX, mouseY, 3.5, 0, Math.PI * 2);

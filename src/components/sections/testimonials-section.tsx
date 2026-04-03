@@ -14,7 +14,7 @@ const testimonials = [
     title: "CEO & Co-Founder",
     company: "Nexora Analytics",
     initials: "PN",
-    accentColor: "bg-lawn",
+    accentColor: "bg-primary",
   },
   {
     quote:
@@ -68,7 +68,7 @@ export function TestimonialsSection() {
         {/* Header */}
         <div className="testimonials-header mb-16">
           <div className="mb-4 flex items-center gap-3">
-            <span className="h-px w-8 bg-lawn" />
+            <span className="h-px w-8 bg-primary" />
             <span className="section-label text-muted">Client Stories</span>
           </div>
           <h2
@@ -112,7 +112,7 @@ function TestimonialCard({
       {/* Quote mark */}
       <div className="flex flex-col gap-5">
         <span
-          className="font-display text-6xl leading-none text-lawn/30"
+          className="font-display text-6xl leading-none text-primary/30"
           style={{ fontVariationSettings: "'opsz' 96" }}
           aria-hidden="true"
         >

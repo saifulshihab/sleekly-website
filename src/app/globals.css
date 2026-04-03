@@ -6,8 +6,8 @@
   :root {
     --color-cream: #fdfbd4;
     --color-beige: #ede8d0;
-    --color-lawn: #7cfc00;
-    --color-lawn-dim: #5ecf00;
+    --color-primary: #00674f;
+    --color-primary-dim: #005040;
     --color-forest: #2d6a4f;
     --color-ink: #1a1a0e;
     --color-muted: #6b6b4e;
@@ -34,7 +34,7 @@
     background: var(--color-beige);
   }
   ::-webkit-scrollbar-thumb {
-    background: var(--color-lawn-dim);
+    background: var(--color-primary-dim);
     border-radius: 3px;
   }
   ::-webkit-scrollbar-thumb:hover {
@@ -43,7 +43,7 @@
 
   /* Selection */
   ::selection {
-    background-color: var(--color-lawn);
+    background-color: var(--color-primary);
     color: var(--color-ink);
   }
 }
@@ -106,9 +106,9 @@
   }
 
   /* Underline accent */
-  .underline-lawn {
+  .underline-primary {
     text-decoration: underline;
-    text-decoration-color: var(--color-lawn);
+    text-decoration-color: var(--color-primary);
     text-underline-offset: 6px;
     text-decoration-thickness: 3px;
   }
@@ -120,7 +120,7 @@
 
   /* Green pill tag */
   .tag-pill {
-    @apply inline-flex items-center rounded-full border border-lawn/40 bg-lawn/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-forest;
+    @apply inline-flex items-center rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-forest;
   }
 
   /* Hover lift */

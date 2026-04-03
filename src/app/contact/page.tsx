@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 import { gsap } from "gsap";
 import { useLayoutEffect, useRef, useState } from "react";
 
@@ -57,7 +58,7 @@ function FormField({ label, name, type, placeholder, required }: FormFieldProps)
         type={type}
         placeholder={placeholder}
         required={required}
-        className="w-full border border-ink/15 bg-cream px-4 py-3 font-sans text-sm text-ink transition-colors duration-200 placeholder:text-muted/50 focus:border-lawn focus:outline-none focus:ring-2 focus:ring-lawn/20"
+        className="w-full border border-ink/15 bg-cream px-4 py-3 font-sans text-sm text-ink transition-colors duration-200 placeholder:text-muted/50 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
       />
     </div>
   );
@@ -111,11 +112,11 @@ export default function ContactPage() {
           className="pointer-events-none absolute inset-0 bg-dot-pattern opacity-30"
           style={{ backgroundSize: "28px 28px" }}
         />
-        <div className="pointer-events-none absolute -right-24 bottom-0 h-[40vw] w-[40vw] translate-y-1/2 rounded-full bg-lawn/5" />
+        <div className="pointer-events-none absolute -right-24 bottom-0 h-[40vw] w-[40vw] translate-y-1/2 rounded-full bg-primary/5" />
 
         <div className="relative mx-auto max-w-7xl">
           <div className="contact-eyebrow mb-8 flex items-center gap-3">
-            <span className="h-px w-8 bg-lawn" />
+            <span className="h-px w-8 bg-primary" />
             <span className="section-label text-muted">Get In Touch</span>
           </div>
           <h1 className="max-w-3xl font-display">
@@ -127,7 +128,7 @@ export default function ContactPage() {
             </span>
             <span className="contact-headline block">
               <span
-                className="text-display-xl font-700 italic text-lawn"
+                className="text-display-xl font-700 italic text-primary"
                 style={{ fontVariationSettings: "'opsz' 144, 'wght' 700, 'SOFT' 100" }}
               >
                 Together.
@@ -148,8 +149,8 @@ export default function ContactPage() {
             {/* Form */}
             <div className="form-col">
               {submitted ? (
-                <div className="flex flex-col gap-6 border border-lawn/30 bg-lawn/5 p-10">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-lawn">
+                <div className="flex flex-col gap-6 border border-primary/30 bg-primary/5 p-10">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary">
                     <span className="text-lg text-ink">✓</span>
                   </div>
                   <h3
@@ -164,7 +165,7 @@ export default function ContactPage() {
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}
-                    className="w-fit border-b border-ink/30 pb-0.5 font-sans text-xs font-700 uppercase tracking-widest text-ink hover:border-lawn hover:text-forest"
+                    className="w-fit border-b border-ink/30 pb-0.5 font-sans text-xs font-700 uppercase tracking-widest text-ink hover:border-primary hover:text-forest"
                   >
                     Send another message
                   </button>
@@ -209,7 +210,7 @@ export default function ContactPage() {
                           className={cn(
                             "rounded-full border px-4 py-1.5 font-sans text-xs font-600 uppercase tracking-widest transition-all duration-200",
                             selectedService === s
-                              ? "border-lawn bg-lawn text-ink"
+                              ? "border-primary bg-primary text-ink"
                               : "border-ink/20 bg-cream text-muted hover:border-ink/50 hover:text-ink",
                           )}
                         >
@@ -231,7 +232,7 @@ export default function ContactPage() {
                           className={cn(
                             "rounded-full border px-4 py-1.5 font-sans text-xs font-600 uppercase tracking-widest transition-all duration-200",
                             selectedBudget === b
-                              ? "border-lawn bg-lawn text-ink"
+                              ? "border-primary bg-primary text-ink"
                               : "border-ink/20 bg-cream text-muted hover:border-ink/50 hover:text-ink",
                           )}
                         >
@@ -252,19 +253,13 @@ export default function ContactPage() {
                       rows={5}
                       placeholder="Describe your project, goals, timeline, or anything else you'd like us to know..."
                       required
-                      className="w-full resize-none border border-ink/15 bg-cream px-4 py-3 font-sans text-sm text-ink transition-colors duration-200 placeholder:text-muted/50 focus:border-lawn focus:outline-none focus:ring-2 focus:ring-lawn/20"
+                      className="w-full resize-none border border-ink/15 bg-cream px-4 py-3 font-sans text-sm text-ink transition-colors duration-200 placeholder:text-muted/50 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
                     />
                   </div>
 
-                  <button
-                    type="submit"
-                    className="group w-fit border-2 border-lawn bg-lawn px-8 py-4 font-sans text-sm font-700 uppercase tracking-widest text-ink transition-all duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-ink-hard active:translate-x-0.5 active:translate-y-0.5"
-                  >
-                    Send Message
-                    <span className="ml-2 inline-block transition-transform duration-200 group-hover:translate-x-1">
-                      →
-                    </span>
-                  </button>
+                  <Button type="submit" variant="primary" size="lg" className="w-fit">
+                    Send Message →
+                  </Button>
                 </form>
               )}
             </div>
@@ -313,7 +308,7 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="mt-4 flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-lawn" />
+                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-primary" />
                   <span className="font-mono text-xs text-forest">Available now</span>
                 </div>
               </div>

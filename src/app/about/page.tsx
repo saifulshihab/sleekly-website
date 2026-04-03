@@ -40,7 +40,7 @@ const team = [
     role: "CEO & Co-Founder",
     bio: "Former frontend engineer lead at Model-Prime. Obsessed with developer experience and systems that scale gracefully.",
     initials: "AC",
-    accent: "bg-lawn",
+    accent: "bg-primary",
     skills: ["React", "Next.js", "TypeScript", "Full Stack"],
   },
 ];
@@ -118,11 +118,11 @@ export default function AboutPage() {
           className="pointer-events-none absolute inset-0 bg-dot-pattern opacity-25"
           style={{ backgroundSize: "28px 28px" }}
         />
-        <div className="pointer-events-none absolute -right-32 top-0 h-[50vw] w-[50vw] -translate-y-1/4 rounded-full border border-lawn/20 bg-lawn/5" />
+        <div className="pointer-events-none absolute -right-32 top-0 h-[50vw] w-[50vw] -translate-y-1/4 rounded-full border border-primary/20 bg-primary/5" />
 
         <div className="relative mx-auto max-w-7xl">
           <div className="about-eyebrow mb-8 flex items-center gap-3">
-            <span className="h-px w-8 bg-lawn" />
+            <span className="h-px w-8 bg-primary" />
             <span className="section-label text-muted">Our Story</span>
           </div>
           <h1 className="max-w-4xl font-display">
@@ -134,7 +134,7 @@ export default function AboutPage() {
             </span>
             <span className="about-hero-line block">
               <span
-                className="text-display-xl font-700 italic text-lawn"
+                className="text-display-xl font-700 italic text-primary"
                 style={{ fontVariationSettings: "'opsz' 144, 'wght' 700, 'SOFT' 100" }}
               >
                 Great Software
@@ -162,7 +162,7 @@ export default function AboutPage() {
             <div className="scroll-reveal flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-16">
               <div className="lg:w-1/3">
                 <div className="mb-4 flex items-center gap-3">
-                  <span className="h-px w-8 bg-lawn/50" />
+                  <span className="h-px w-8 bg-primary/50" />
                   <span className="section-label text-cream/40">Mission</span>
                 </div>
               </div>
@@ -188,7 +188,7 @@ export default function AboutPage() {
           <div className="mx-auto max-w-7xl">
             <div className="scroll-reveal mb-14">
               <div className="mb-4 flex items-center gap-3">
-                <span className="h-px w-8 bg-lawn" />
+                <span className="h-px w-8 bg-primary" />
                 <span className="section-label text-muted">What We Stand For</span>
               </div>
               <h2
@@ -223,7 +223,7 @@ export default function AboutPage() {
           <div className="mx-auto max-w-7xl">
             <div className="scroll-reveal mb-14">
               <div className="mb-4 flex items-center gap-3">
-                <span className="h-px w-8 bg-lawn" />
+                <span className="h-px w-8 bg-primary" />
                 <span className="section-label text-muted">The People</span>
               </div>
               <h2
@@ -276,7 +276,7 @@ export default function AboutPage() {
           <div className="mx-auto max-w-7xl">
             <div className="scroll-reveal mb-14">
               <div className="mb-4 flex items-center gap-3">
-                <span className="h-px w-8 bg-lawn" />
+                <span className="h-px w-8 bg-primary" />
                 <span className="section-label text-muted">Since 2026</span>
               </div>
               <h2
@@ -293,8 +293,8 @@ export default function AboutPage() {
                 {milestones.map((m) => (
                   <div key={m.year} className="milestone-item relative flex items-start gap-6">
                     {/* Node */}
-                    <div className="absolute -left-[1.3rem] top-1 h-3 w-3 rounded-full border-2 border-lawn bg-cream" />
-                    <div className="shrink-0 font-mono text-sm font-600 text-lawn">{m.year}</div>
+                    <div className="absolute -left-[1.3rem] top-1 h-3 w-3 rounded-full border-2 border-primary bg-cream" />
+                    <div className="shrink-0 font-mono text-sm font-600 text-primary">{m.year}</div>
                     <p className="text-base text-muted">{m.event}</p>
                   </div>
                 ))}

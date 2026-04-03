@@ -74,7 +74,7 @@ export function TechSection() {
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <span className="h-px w-8 bg-lawn" />
+              <span className="h-px w-8 bg-primary" />
               <span className="section-label text-muted">Tech Stack</span>
             </div>
             <h2
@@ -114,7 +114,7 @@ export function TechSection() {
           {categories.map((cat) => (
             <div
               key={cat.label}
-              className="tech-category group border border-ink/10 bg-beige p-5 transition-all duration-300 hover:border-lawn/30 hover:bg-lawn/5"
+              className="tech-category group border border-ink/10 bg-beige p-5 transition-all duration-300 hover:border-primary/30 hover:bg-primary/5"
             >
               <h4 className="section-label mb-3 text-forest">{cat.label}</h4>
               <ul className="flex flex-col gap-1.5">

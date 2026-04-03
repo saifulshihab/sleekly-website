@@ -91,7 +91,7 @@ export function ServicesSection() {
         <div className="services-header mb-16 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <span className="h-px w-8 bg-lawn" />
+              <span className="h-px w-8 bg-primary" />
               <span className="section-label text-muted">What We Do</span>
             </div>
             <h2
@@ -129,17 +129,17 @@ function ServiceCard({ number, title, description, tags }: ServiceCardProps) {
   return (
     <div className="service-card group relative flex flex-col gap-5 bg-cream p-8 transition-colors duration-300 hover:bg-ink">
       {/* Hover green line */}
-      <div className="absolute left-0 top-0 h-0.5 w-0 bg-lawn transition-all duration-500 group-hover:w-full" />
+      <div className="absolute left-0 top-0 h-0.5 w-0 bg-primary transition-all duration-500 group-hover:w-full" />
 
       <div className="flex items-start justify-between">
         <span
           className={cn(
-            "font-mono text-xs text-muted/60 transition-colors duration-300 group-hover:text-lawn/60",
+            "font-mono text-xs text-muted/60 transition-colors duration-300 group-hover:text-primary/60",
           )}
         >
           {number}
         </span>
-        <div className="h-5 w-5 rounded-full border border-ink/20 transition-all duration-300 group-hover:border-lawn/40 group-hover:bg-lawn/10" />
+        <div className="h-5 w-5 rounded-full border border-ink/20 transition-all duration-300 group-hover:border-primary/40 group-hover:bg-primary/10" />
       </div>
 
       <h3
@@ -157,7 +157,7 @@ function ServiceCard({ number, title, description, tags }: ServiceCardProps) {
         {tags.map((tag) => (
           <span
             key={tag}
-            className="rounded-full border border-ink/10 px-2.5 py-0.5 font-mono text-xs text-muted/70 transition-all duration-300 group-hover:border-lawn/20 group-hover:text-lawn/70"
+            className="rounded-full border border-ink/10 px-2.5 py-0.5 font-mono text-xs text-muted/70 transition-all duration-300 group-hover:border-primary/20 group-hover:text-primary/70"
           >
             {tag}
           </span>
@@ -166,8 +166,8 @@ function ServiceCard({ number, title, description, tags }: ServiceCardProps) {
 
       {/* Arrow indicator */}
       <div className="flex items-center gap-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
-        <span className="section-label text-lawn">Explore</span>
-        <span className="text-lawn text-sm">→</span>
+        <span className="section-label text-primary">Explore</span>
+        <span className="text-primary text-sm">→</span>
       </div>
     </div>
   );

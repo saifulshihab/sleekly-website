@@ -54,11 +54,11 @@ export function HeroSection() {
 
       {/* Large decorative orb */}
       <div
-        className="hero-orb pointer-events-none absolute -right-32 top-1/2 -translate-y-1/2 rounded-full bg-lawn"
+        className="hero-orb pointer-events-none absolute -right-32 top-1/2 -translate-y-1/2 rounded-full bg-primary"
         style={{ width: "52vw", height: "52vw", opacity: 0.12 }}
       />
       <div
-        className="hero-orb pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 rounded-full border border-lawn/30"
+        className="hero-orb pointer-events-none absolute -right-24 top-1/2 -translate-y-1/2 rounded-full border border-primary/30"
         style={{ width: "52vw", height: "52vw" }}
       />
 
@@ -67,7 +67,7 @@ export function HeroSection() {
         <div className="max-w-[900px]">
           {/* Eyebrow */}
           <div className="hero-eyebrow mb-8 flex items-center gap-3">
-            <span className="h-px w-8 bg-lawn" />
+            <span className="h-px w-8 bg-primary" />
             <span className="section-label text-muted">
               Software Development Studio
             </span>
@@ -83,7 +83,7 @@ export function HeroSection() {
             </span>
             <span className="hero-line block overflow-hidden">
               <span
-                className="text-display-xl font-900 italic text-lawn"
+                className="text-display-xl font-900 italic text-primary"
                 style={{ fontVariationSettings: "'opsz' 144, 'wght' 700, 'SOFT' 100" }}
               >
                 Software

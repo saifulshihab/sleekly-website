@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -48,9 +49,9 @@ export function Navbar() {
               style={{ fontVariationSettings: "'opsz' 144, 'wght' 700" }}
             >
               Sleek
-              <span className="text-lawn">ly</span>
+              <span className="text-primary">ly</span>
             </span>
-            <span className="h-1.5 w-1.5 rounded-full bg-lawn transition-transform duration-300 group-hover:scale-150" />
+            <span className="h-1.5 w-1.5 rounded-full bg-primary transition-transform duration-300 group-hover:scale-150" />
           </Link>
 
           {/* Desktop nav */}
@@ -61,7 +62,7 @@ export function Navbar() {
                 href={link.href}
                 className={cn(
                   "section-label text-muted transition-colors duration-200 hover:text-ink",
-                  pathname === link.href && "underline-lawn",
+                  pathname === link.href && "underline-primary",
                 )}
               >
                 {link.label}
@@ -71,14 +72,8 @@ export function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hidden items-center gap-4 md:flex">
-            <Link
-              href="/contact"
-              className="group inline-flex items-center gap-2 border-2 border-ink bg-ink px-5 py-2.5 font-sans text-xs font-700 uppercase tracking-widest text-cream transition-all duration-200 hover:bg-transparent hover:text-ink"
-            >
-              Start a Project
-              <span className="transition-transform duration-200 group-hover:translate-x-0.5">
-                →
-              </span>
+            <Link href="/contact" className={buttonVariants({ variant: "secondary", size: "sm" })}>
+              Start a Project →
             </Link>
           </div>
 
@@ -125,7 +120,7 @@ export function Navbar() {
               className="group flex items-center gap-4 py-3"
               style={{ transitionDelay: menuOpen ? `${i * 60}ms` : "0ms" }}
             >
-              <span className="font-mono text-xs text-lawn opacity-60">0{i + 1}</span>
+              <span className="font-mono text-xs text-primary opacity-60">0{i + 1}</span>
               <span
                 className="text-display-md font-display font-700 text-ink transition-colors group-hover:text-forest"
                 style={{ fontVariationSettings: "'opsz' 72" }}
@@ -134,10 +129,7 @@ export function Navbar() {
               </span>
             </Link>
           ))}
-          <Link
-            href="/contact"
-            className="mt-8 border-2 border-ink bg-ink px-6 py-3 font-sans text-xs font-700 uppercase tracking-widest text-cream"
-          >
+          <Link href="/contact" className={cn("mt-8", buttonVariants({ variant: "secondary", size: "md" }))}>
             Start a Project →
           </Link>
         </div>
